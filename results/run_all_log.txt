@@ -1,0 +1,17 @@
+[16:07:18] start timing
+[16:18:34] end timing
+[16:18:34] start main
+[16:18:55] end main
+[16:18:55] start heldout
+[17:19:27] end heldout
+[17:19:27] start public
+[17:50:47] end public
+[17:50:47] start eqtime
+[18:46:30] end eqtime
+[18:46:30] start n30
+[19:42:52] end n30
+[19:42:52] start budget5
+[20:46:02] end budget5
+[20:46:02] start b2
+[20:46:04] end b2
+[20:46:04] all done

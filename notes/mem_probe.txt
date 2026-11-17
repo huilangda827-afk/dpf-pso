@@ -1,0 +1,6 @@
+﻿
+FreePhysicalMemory TotalVisibleMemorySize FreeVirtualMemory TotalVirtualMemorySize
+------------------ ---------------------- ----------------- ----------------------
+          16222040               50102136          17920536               77365112
+
+

@@ -1,0 +1,19 @@
+# Raw results are archived on Zenodo (see README); the repository keeps the
+# configuration records, the analysis outputs and everything needed to
+# regenerate the manuscript from them.
+results/*/*.npz
+results/log_*.txt
+results/smoke_rev4/
+results/archive_*/
+results/pilot*/
+# large downloads and caches
+data/*.tif
+__pycache__/
+*.pyc
+# Word/pandoc intermediates and page previews
+paper/*_raw.docx
+paper/preview_*.png
+paper/~$*.docx
+paper/mdpi_template/*.dot
+# local distribution packages
+dist/

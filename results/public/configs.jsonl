@@ -1,0 +1,1 @@
+{"tag": "public", "runs": 30, "workers": 20, "instances": ["C1_n10", "C1_n20"], "algos": ["PSO", "SPSO", "GWO", "WOA", "HHO", "DE", "LSHADE", "CMAES", "IDP", "GLS", "DPF-PSO", "DE-T", "LSHADE-T", "SPSO-T", "IDP-T", "DPF-PSO-T"], "budget_mult": 1.0, "mult": "", "seed": 20271101, "params": "{}", "skip_existing": true, "n_tasks": 960, "started": "2026-11-05 17:19:28"}

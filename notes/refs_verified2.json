@@ -1,0 +1,189 @@
+{
+ "whitley2016": {
+  "doi": "10.1162/EVCO_a_00184",
+  "title": "Gray Box Optimization for Mk Landscapes (NK Landscapes and MAX-kSAT)",
+  "authors": "L. Darrell Whitley, Francisco Chicano, Brian W. Goldman",
+  "venue": "Evolutionary Computation",
+  "volume": "24",
+  "issue": "3",
+  "pages": "491-519",
+  "year": 2016,
+  "type": "journal-article"
+ },
+ "tinos2015": {
+  "doi": "10.1145/2725494.2725497",
+  "title": "Partition Crossover for Pseudo-Boolean Optimization",
+  "authors": "Renato Tinós, Darrell Whitley, Francisco Chicano",
+  "venue": "Proceedings of the 2015 ACM Conference on Foundations of Genetic Algorithms XIII",
+  "volume": "",
+  "issue": "",
+  "pages": "137-149",
+  "year": 2015,
+  "type": "proceedings-article"
+ },
+ "cotta1998": {
+  "doi": "10.1007/BFb0056873",
+  "title": "Utilizing dynastically optimal forma recombination in hybrid genetic algorithms",
+  "authors": "Carlos Cotta, Enrique Alba, José M. Troya",
+  "venue": "Lecture Notes in Computer Science",
+  "volume": "",
+  "issue": "",
+  "pages": "305-314",
+  "year": 1998,
+  "type": "book-chapter"
+ },
+ "zhan2025": {
+  "doi": "10.3390/s25092730",
+  "title": "MSCSO: A Modified Sand Cat Swarm Algorithm for 3D UAV Path Planning in Complex Environments with Multiple Threats",
+  "authors": "Zhengsheng Zhan, Dangyue Lai, Canjian Huang, Zhixiang Zhang, Yongle Deng, Jian Yang",
+  "venue": "Sensors",
+  "volume": "25",
+  "issue": "9",
+  "pages": "2730",
+  "year": 2025,
+  "type": "journal-article"
+ },
+ "wang2025": {
+  "doi": "10.3390/drones9090638",
+  "title": "Path Planning for Multi-UAV in a Complex Environment Based on Reinforcement-Learning-Driven Continuous Ant Colony Optimization",
+  "authors": "Yongjin Wang, Jing Liu, Yuefeng Qian, Wenjie Yi",
+  "venue": "Drones",
+  "volume": "9",
+  "issue": "9",
+  "pages": "638",
+  "year": 2025,
+  "type": "journal-article"
+ },
+ "rasoulie2026": {
+  "doi": "10.1038/s41598-026-42372-8",
+  "title": "3D UAV path optimization using a task-allocation and archive-guided mutation particle swarm optimization algorithm",
+  "authors": "Fariborz Rasoulie, Saeid Pashazadeh",
+  "venue": "Scientific Reports",
+  "volume": "16",
+  "issue": "1",
+  "pages": "24356",
+  "year": 2026,
+  "type": "journal-article"
+ },
+ "hooshyar2023": {
+  "doi": "10.3390/drones7120687",
+  "title": "Meta-heuristic Algorithms in UAV Path Planning Optimization: A Systematic Review (2018–2022)",
+  "authors": "Maral Hooshyar, Yueh-Min Huang",
+  "venue": "Drones",
+  "volume": "7",
+  "issue": "12",
+  "pages": "687",
+  "year": 2023,
+  "type": "journal-article"
+ },
+ "fu2024": {
+  "doi": "10.1007/s10462-024-10716-3",
+  "title": "Red-billed blue magpie optimizer: a novel metaheuristic algorithm for 2D/3D UAV path planning and engineering design problems",
+  "authors": "Shengwei Fu, Ke Li, Haisong Huang, Chi Ma, Qingsong Fan, Yunwei Zhu",
+  "venue": "Artificial Intelligence Review",
+  "volume": "57",
+  "issue": "6",
+  "pages": "134",
+  "year": 2024,
+  "type": "journal-article"
+ },
+ "eremeev2014a": {
+  "doi": "10.2298/YJOR130731040E",
+  "title": "Optimal recombination in genetic algorithms for combinatorial optimization problems: Part I",
+  "authors": "Anton Eremeev, Julia Kovalenko",
+  "venue": "Yugoslav Journal of Operations Research",
+  "volume": "24",
+  "issue": "1",
+  "pages": "1-20",
+  "year": 2014,
+  "type": "journal-article"
+ },
+ "eremeev2014b": {
+  "doi": "10.2298/YJOR131030041E",
+  "title": "Optimal recombination in genetic algorithms for combinatorial optimization problems: Part II",
+  "authors": "Anton Eremeev, Julia Kovalenko",
+  "venue": "Yugoslav Journal of Operations Research",
+  "volume": "24",
+  "issue": "2",
+  "pages": "165-186",
+  "year": 2014,
+  "type": "journal-article"
+ },
+ "muehlenbein1996": {
+  "doi": "10.1007/978-1-4613-1361-8_4",
+  "title": "Gene Pool Recombination in Genetic Algorithms",
+  "authors": "Heinz Mühlenbein, Hans-Michael Voigt",
+  "venue": "Meta-Heuristics",
+  "volume": "",
+  "issue": "",
+  "pages": "53-62",
+  "year": 1996,
+  "type": "book-chapter"
+ },
+ "amini1990": {
+  "doi": "10.1109/34.57681",
+  "title": "Using dynamic programming for solving variational problems in vision",
+  "authors": "A.A. Amini, T.E. Weymouth, R.C. Jain",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "volume": "12",
+  "issue": "9",
+  "pages": "855-867",
+  "year": 1990,
+  "type": "journal-article"
+ },
+ "werling2010": {
+  "doi": "10.1109/ROBOT.2010.5509799",
+  "title": "Optimal trajectory generation for dynamic street scenarios in a Fren&amp;#x00E9;t Frame",
+  "authors": "Moritz Werling, Julius Ziegler, Sören Kammel, Sebastian Thrun",
+  "venue": "2010 IEEE International Conference on Robotics and Automation",
+  "volume": "",
+  "issue": "",
+  "pages": "987-993",
+  "year": 2010,
+  "type": "proceedings-article"
+ },
+ "hansen2001": {
+  "doi": "10.1162/106365601750190398",
+  "title": "Completely Derandomized Self-Adaptation in Evolution Strategies",
+  "authors": "Nikolaus Hansen, Andreas Ostermeier",
+  "venue": "Evolutionary Computation",
+  "volume": "9",
+  "issue": "2",
+  "pages": "159-195",
+  "year": 2001,
+  "type": "journal-article"
+ },
+ "auger2005": {
+  "doi": "10.1109/CEC.2005.1554902",
+  "title": "A Restart CMA Evolution Strategy With Increasing Population Size",
+  "authors": "A. Auger, N. Hansen",
+  "venue": "2005 IEEE Congress on Evolutionary Computation",
+  "volume": "2",
+  "issue": "",
+  "pages": "1769-1776",
+  "year": null,
+  "type": "proceedings-article"
+ },
+ "vargha2000": {
+  "doi": "10.3102/10769986025002101",
+  "title": "A Critique and Improvement of the\n                    <i>CL</i>\n                    Common Language Effect Size Statistics of McGraw and Wong",
+  "authors": "András Vargha, Harold D. Delaney",
+  "venue": "Journal of Educational and Behavioral Statistics",
+  "volume": "25",
+  "issue": "2",
+  "pages": "101-132",
+  "year": 2000,
+  "type": "journal-article"
+ },
+ "luus2000": {
+  "doi": "10.1201/9781420036022",
+  "title": "Iterative Dynamic Programming",
+  "authors": "Rein Luus",
+  "venue": "",
+  "volume": "",
+  "issue": "",
+  "pages": "",
+  "year": 2019,
+  "type": "monograph"
+ }
+}

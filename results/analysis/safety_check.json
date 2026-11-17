@@ -1,0 +1,1164 @@
+{
+ "main": {
+  "n_paths": 11160,
+  "n_feasible": 11126,
+  "n_mismatch": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999623,
+  "per_method": {
+   "CMAES": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000650704619005,
+    "tangent": 6,
+    "min_margin": 5.452675500805526e-05
+   },
+   "DE": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.002622989282713,
+    "tangent": 4,
+    "min_margin": 0.0001973619502280144
+   },
+   "DE+DPF": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000087343394835,
+    "tangent": 18,
+    "min_margin": 1.9628480501410195e-05
+   },
+   "DE-NP10D": {
+    "n": 360,
+    "feasible": 334,
+    "min_clear": 20.176390122358498,
+    "tangent": 0,
+    "min_margin": 0.02333310556043955
+   },
+   "DE-NP5D": {
+    "n": 360,
+    "feasible": 359,
+    "min_clear": 20.474173389013174,
+    "tangent": 0,
+    "min_margin": 0.03222709543649671
+   },
+   "DE-T": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.019817106300707,
+    "tangent": 0,
+    "min_margin": 0.001049406988997248
+   },
+   "DPF-PSO": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00000583023427,
+    "tangent": 92,
+    "min_margin": 5.058947039060513e-07
+   },
+   "DPF-PSO-T": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000011611956886,
+    "tangent": 89,
+    "min_margin": 3.696451642554166e-07
+   },
+   "DPF-PSO_greedy": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.026649350030652,
+    "tangent": 13,
+    "min_margin": 6.286941073341268e-05
+   },
+   "DPF-PSO_noA": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00000371313348,
+    "tangent": 126,
+    "min_margin": 2.417740603277707e-07
+   },
+   "DPF-PSO_noG": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000000000013983,
+    "tangent": 180,
+    "min_margin": 9.947598300641403e-14
+   },
+   "DPF-PSO_noL": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.003417562100765,
+    "tangent": 2,
+    "min_margin": 0.00018356096062177585
+   },
+   "DPF-PSO_noR": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.0000002424986,
+    "tangent": 125,
+    "min_margin": 6.404832220141543e-11
+   },
+   "DPF-only": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.017499494648405,
+    "tangent": 0,
+    "min_margin": 0.0038899775396075142
+   },
+   "GLS": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00011518971627,
+    "tangent": 72,
+    "min_margin": 9.377599042181828e-06
+   },
+   "GWO": {
+    "n": 360,
+    "feasible": 356,
+    "min_clear": 20.023160302762264,
+    "tangent": 1,
+    "min_margin": 9.65114414270829e-05
+   },
+   "GWO+DPF": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.016998777298845,
+    "tangent": 0,
+    "min_margin": 0.009318908591524178
+   },
+   "HHO": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.001577728594725,
+    "tangent": 8,
+    "min_margin": 2.1316282072803006e-14
+   },
+   "HHO+DPF": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00052546510875,
+    "tangent": 17,
+    "min_margin": 2.5266899683629163e-11
+   },
+   "IDP": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00105523009023,
+    "tangent": 16,
+    "min_margin": 8.182367089659692e-05
+   },
+   "IDP-T": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000057484390368,
+    "tangent": 100,
+    "min_margin": 8.670827369883227e-06
+   },
+   "LSHADE": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00016512455329,
+    "tangent": 17,
+    "min_margin": 4.4631591876509447e-05
+   },
+   "LSHADE+DPF": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000734083409938,
+    "tangent": 5,
+    "min_margin": 0.00026464805510073575
+   },
+   "LSHADE-T": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000000330570032,
+    "tangent": 142,
+    "min_margin": 3.023845351890486e-08
+   },
+   "PSO": {
+    "n": 360,
+    "feasible": 357,
+    "min_clear": 20.000046196044366,
+    "tangent": 6,
+    "min_margin": 5.7113514557727285e-05
+   },
+   "SPSO": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 19.999999999999652,
+    "tangent": 164,
+    "min_margin": 0.0
+   },
+   "SPSO-N100": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 19.999999999999623,
+    "tangent": 152,
+    "min_margin": 0.0
+   },
+   "SPSO-N500": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000042141156825,
+    "tangent": 37,
+    "min_margin": 9.450182005821262e-06
+   },
+   "SPSO-T": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00000118507677,
+    "tangent": 68,
+    "min_margin": 1.3507492724329495e-07
+   },
+   "WOA": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000000383466443,
+    "tangent": 119,
+    "min_margin": 3.979089058248064e-09
+   },
+   "WOA+DPF": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000030042123342,
+    "tangent": 35,
+    "min_margin": 5.212074682958701e-07
+   }
+  }
+ },
+ "heldout": {
+  "band_along": false,
+  "n_paths": 15200,
+  "n_feasible": 15164,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": null,
+  "max_band_violation_reported_feasible": null,
+  "n_at_band_tolerance": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999837,
+  "max_top": null,
+  "per_method": {
+   "CMAES": {
+    "n": 800,
+    "feasible": 791,
+    "min_clear": 20.001938701451053,
+    "max_top": null,
+    "tangent": 12,
+    "min_margin": 8.073727102697603e-05
+   },
+   "DE": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000429508238273,
+    "max_top": null,
+    "tangent": 4,
+    "min_margin": 0.00012424771631458498
+   },
+   "DE-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.015193684283076,
+    "max_top": null,
+    "tangent": 1,
+    "min_margin": 0.0004790825030625001
+   },
+   "DPF-PSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000032487430985,
+    "max_top": null,
+    "tangent": 131,
+    "min_margin": 4.1156991414936783e-07
+   },
+   "DPF-PSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.001091291365185,
+    "max_top": null,
+    "tangent": 167,
+    "min_margin": 8.19172171873106e-07
+   },
+   "DPF-PSO_greedy": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000037875442217,
+    "max_top": null,
+    "tangent": 12,
+    "min_margin": 0.000438229675552293
+   },
+   "DPF-PSO_noG": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.00000183698063,
+    "max_top": null,
+    "tangent": 219,
+    "min_margin": 5.558717930398416e-10
+   },
+   "DPF-only": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.026083347329006,
+    "max_top": null,
+    "tangent": 1,
+    "min_margin": 0.0002225857401683129
+   },
+   "GLS": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000057179094533,
+    "max_top": null,
+    "tangent": 118,
+    "min_margin": 1.0871464226624994e-06
+   },
+   "GWO": {
+    "n": 800,
+    "feasible": 794,
+    "min_clear": 20.044159910017243,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.002509982162372637
+   },
+   "HHO": {
+    "n": 800,
+    "feasible": 797,
+    "min_clear": 20.003274461492254,
+    "max_top": null,
+    "tangent": 13,
+    "min_margin": 3.144635222440684e-05
+   },
+   "IDP": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.001498516401114,
+    "max_top": null,
+    "tangent": 21,
+    "min_margin": 6.182492569450915e-06
+   },
+   "IDP-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000008765765017,
+    "max_top": null,
+    "tangent": 123,
+    "min_margin": 4.5764748080046047e-07
+   },
+   "LSHADE": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.00135698342274,
+    "max_top": null,
+    "tangent": 30,
+    "min_margin": 2.944904466062326e-06
+   },
+   "LSHADE-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000001857244012,
+    "max_top": null,
+    "tangent": 237,
+    "min_margin": 7.82477371785717e-09
+   },
+   "PSO": {
+    "n": 800,
+    "feasible": 793,
+    "min_clear": 20.00122601332339,
+    "max_top": null,
+    "tangent": 9,
+    "min_margin": 2.8409296142228868e-05
+   },
+   "SPSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 19.999999999999837,
+    "max_top": null,
+    "tangent": 197,
+    "min_margin": 0.0
+   },
+   "SPSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000000000026603,
+    "max_top": null,
+    "tangent": 156,
+    "min_margin": 7.815970093361102e-14
+   },
+   "WOA": {
+    "n": 800,
+    "feasible": 789,
+    "min_clear": 20.000000046471996,
+    "max_top": null,
+    "tangent": 191,
+    "min_margin": 4.495078087529691e-09
+   }
+  }
+ },
+ "public": {
+  "n_paths": 960,
+  "n_feasible": 956,
+  "n_mismatch": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 85.34383090366381,
+  "per_method": {
+   "CMAES": {
+    "n": 60,
+    "feasible": 58,
+    "min_clear": 85.34383090366381,
+    "tangent": 0,
+    "min_margin": 0.008022881675685767
+   },
+   "DE": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 94.38996390257205,
+    "tangent": 2,
+    "min_margin": 0.0006056632386730598
+   },
+   "DE-T": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 129.8035828701042,
+    "tangent": 0,
+    "min_margin": 0.04348651724917829
+   },
+   "DPF-PSO": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 121.93682345383513,
+    "tangent": 7,
+    "min_margin": 2.7376499417641753e-05
+   },
+   "DPF-PSO-T": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 128.18672041584173,
+    "tangent": 9,
+    "min_margin": 4.706492688910657e-06
+   },
+   "GLS": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 119.02939662957341,
+    "tangent": 12,
+    "min_margin": 2.2631570644193744e-05
+   },
+   "GWO": {
+    "n": 60,
+    "feasible": 59,
+    "min_clear": 89.84277693131378,
+    "tangent": 0,
+    "min_margin": 0.015681354502433464
+   },
+   "HHO": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 132.90031991658793,
+    "tangent": 0,
+    "min_margin": 0.007223773384964716
+   },
+   "IDP": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 122.35600757743455,
+    "tangent": 2,
+    "min_margin": 0.00023151593121895075
+   },
+   "IDP-T": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 127.99736004412958,
+    "tangent": 11,
+    "min_margin": 3.917441816270184e-06
+   },
+   "LSHADE": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 91.78268672927476,
+    "tangent": 2,
+    "min_margin": 8.249048647712698e-06
+   },
+   "LSHADE-T": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 93.18372609946675,
+    "tangent": 32,
+    "min_margin": 7.362016987144671e-07
+   },
+   "PSO": {
+    "n": 60,
+    "feasible": 59,
+    "min_clear": 93.6947444281783,
+    "tangent": 2,
+    "min_margin": 0.0007726072178826371
+   },
+   "SPSO": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 99.9999268570354,
+    "tangent": 8,
+    "min_margin": 1.4210854715202004e-14
+   },
+   "SPSO-T": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 100.00000000000003,
+    "tangent": 5,
+    "min_margin": 4.115365797474624e-06
+   },
+   "WOA": {
+    "n": 60,
+    "feasible": 60,
+    "min_clear": 128.46393139262437,
+    "tangent": 12,
+    "min_margin": 1.4060252340186707e-07
+   }
+  }
+ },
+ "eqtime": {
+  "n_paths": 3600,
+  "n_feasible": 3593,
+  "n_mismatch": 1,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 1,
+  "mismatches": [
+   "SPSO S6_n10 run 18: margin 2.389e-02 m, clearance 20.000000000000 m, cost function infeasible"
+  ],
+  "mismatch_records": [
+   {
+    "algo": "SPSO",
+    "inst": "S6_n10",
+    "run": 18,
+    "margin": 0.023893136370261914,
+    "clearance": 20.0,
+    "cost_feasible": false,
+    "check_feasible": true
+   }
+  ],
+  "min_clear": 19.9999999999998,
+  "per_method": {
+   "CMAES": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000650704619005,
+    "tangent": 6,
+    "min_margin": 5.452675500805526e-05
+   },
+   "DE": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.001161201307468,
+    "tangent": 31,
+    "min_margin": 5.3338273886538445e-06
+   },
+   "GLS": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00011518971627,
+    "tangent": 72,
+    "min_margin": 9.377599042181828e-06
+   },
+   "GWO": {
+    "n": 360,
+    "feasible": 356,
+    "min_clear": 20.012115707529006,
+    "tangent": 2,
+    "min_margin": 0.0009266447854372473
+   },
+   "HHO": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.003239422566764,
+    "tangent": 7,
+    "min_margin": 8.991335249675103e-07
+   },
+   "IDP": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.00002174965161,
+    "tangent": 22,
+    "min_margin": 9.048340601225391e-07
+   },
+   "LSHADE": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000026322704457,
+    "tangent": 36,
+    "min_margin": 4.661039163522673e-06
+   },
+   "PSO": {
+    "n": 360,
+    "feasible": 357,
+    "min_clear": 20.00012417126169,
+    "tangent": 61,
+    "min_margin": 4.245073206732286e-06
+   },
+   "SPSO": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 19.9999999999998,
+    "tangent": 148,
+    "min_margin": 0.0
+   },
+   "WOA": {
+    "n": 360,
+    "feasible": 360,
+    "min_clear": 20.000000463896868,
+    "tangent": 125,
+    "min_margin": 1.4499619283014908e-09
+   }
+  }
+ },
+ "n30": {
+  "n_paths": 1320,
+  "n_feasible": 1280,
+  "n_mismatch": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999943,
+  "per_method": {
+   "CMAES": {
+    "n": 120,
+    "feasible": 110,
+    "min_clear": 20.038937070472286,
+    "tangent": 2,
+    "min_margin": 0.0001917224573162457
+   },
+   "DE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.01141842606924,
+    "tangent": 1,
+    "min_margin": 0.0005753106404000619
+   },
+   "DPF-PSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 23.20933696517733,
+    "tangent": 30,
+    "min_margin": 1.6215790310525335e-07
+   },
+   "GLS": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001419090163722,
+    "tangent": 33,
+    "min_margin": 1.2953748949939836e-05
+   },
+   "GWO": {
+    "n": 120,
+    "feasible": 99,
+    "min_clear": 20.531652736338856,
+    "tangent": 0,
+    "min_margin": 0.0030172202090952283
+   },
+   "HHO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 33.98943017932166,
+    "tangent": 5,
+    "min_margin": 4.2732040128612425e-11
+   },
+   "IDP": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.02280201733106,
+    "tangent": 9,
+    "min_margin": 3.523798294224889e-05
+   },
+   "LSHADE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.065811037580715,
+    "tangent": 2,
+    "min_margin": 0.0006195034737146443
+   },
+   "PSO": {
+    "n": 120,
+    "feasible": 111,
+    "min_clear": 20.002382071463614,
+    "tangent": 0,
+    "min_margin": 0.0013822684961866116
+   },
+   "SPSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 19.999999999999943,
+    "tangent": 41,
+    "min_margin": 7.105427357601002e-15
+   },
+   "WOA": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 36.9068901197644,
+    "tangent": 26,
+    "min_margin": 4.148361654188193e-10
+   }
+  }
+ },
+ "budget5": {
+  "n_paths": 1320,
+  "n_feasible": 1317,
+  "n_mismatch": 1,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 1,
+  "mismatches": [
+   "SPSO S6_n10 run 9: margin 3.748e+00 m, clearance 20.000000000000 m, cost function infeasible"
+  ],
+  "mismatch_records": [
+   {
+    "algo": "SPSO",
+    "inst": "S6_n10",
+    "run": 9,
+    "margin": 3.7481465540025667,
+    "clearance": 20.0,
+    "cost_feasible": false,
+    "check_feasible": true
+   }
+  ],
+  "min_clear": 19.99999999999979,
+  "per_method": {
+   "CMAES": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000650704619005,
+    "tangent": 4,
+    "min_margin": 8.187211604848699e-05
+   },
+   "DE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000000194947233,
+    "tangent": 81,
+    "min_margin": 4.334138736794557e-08
+   },
+   "DPF-PSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000000004992046,
+    "tangent": 58,
+    "min_margin": 4.831690603168681e-13
+   },
+   "GLS": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000009964799574,
+    "tangent": 21,
+    "min_margin": 4.045462476653938e-05
+   },
+   "GWO": {
+    "n": 120,
+    "feasible": 119,
+    "min_clear": 20.513486444107002,
+    "tangent": 1,
+    "min_margin": 0.00027745100214815466
+   },
+   "HHO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.0,
+    "tangent": 5,
+    "min_margin": 6.297654469733516e-05
+   },
+   "IDP": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001384740745777,
+    "tangent": 9,
+    "min_margin": 0.00016400090277102208
+   },
+   "LSHADE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.00000000006719,
+    "tangent": 59,
+    "min_margin": 7.034373084024992e-13
+   },
+   "PSO": {
+    "n": 120,
+    "feasible": 118,
+    "min_clear": 20.000001293744504,
+    "tangent": 83,
+    "min_margin": 7.848953487155086e-09
+   },
+   "SPSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 19.99999999999979,
+    "tangent": 54,
+    "min_margin": 0.0
+   },
+   "WOA": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000147813145418,
+    "tangent": 54,
+    "min_margin": 2.799680487441947e-10
+   }
+  }
+ },
+ "b2": {
+  "n_paths": 1320,
+  "n_feasible": 1315,
+  "n_mismatch": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999904,
+  "per_method": {
+   "CMAES": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.005852467633474,
+    "tangent": 0,
+    "min_margin": 0.015101140849452577
+   },
+   "DE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.017249844833373,
+    "tangent": 0,
+    "min_margin": 0.007216331741119575
+   },
+   "DPF-PSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000051768741343,
+    "tangent": 0,
+    "min_margin": 1.2610985235890197
+   },
+   "GLS": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000002621669164,
+    "tangent": 2,
+    "min_margin": 4.6649581690871855e-05
+   },
+   "GWO": {
+    "n": 120,
+    "feasible": 116,
+    "min_clear": 20.089763826573574,
+    "tangent": 0,
+    "min_margin": 0.004404448047722553
+   },
+   "HHO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.00006252178696,
+    "tangent": 0,
+    "min_margin": 0.0013815224626725353
+   },
+   "IDP": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.00418775657107,
+    "tangent": 0,
+    "min_margin": 0.07476560843078062
+   },
+   "LSHADE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001067439556778,
+    "tangent": 0,
+    "min_margin": 0.020249154985719997
+   },
+   "PSO": {
+    "n": 120,
+    "feasible": 119,
+    "min_clear": 20.000653541991312,
+    "tangent": 0,
+    "min_margin": 0.008325178874770245
+   },
+   "SPSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 19.999999999999904,
+    "tangent": 3,
+    "min_margin": 1.1368683772161603e-13
+   },
+   "WOA": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.00000953527882,
+    "tangent": 17,
+    "min_margin": 1.541603467103414e-08
+   }
+  }
+ },
+ "heldout_band": {
+  "band_along": true,
+  "n_paths": 4800,
+  "n_feasible": 4799,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": 1.001e-06,
+  "max_band_violation_reported_feasible": 1.000000281692337e-06,
+  "n_at_band_tolerance": 29,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 99.99999899999972,
+  "max_top": 200.00000100000014,
+  "per_method": {
+   "DE": {
+    "n": 800,
+    "feasible": 799,
+    "min_clear": 100.0004682698081,
+    "max_top": 199.99175464106992,
+    "tangent": 2,
+    "min_margin": 0.00014336491489075343
+   },
+   "DPF-PSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.00000091263297,
+    "max_top": 199.99997665509116,
+    "tangent": 137,
+    "min_margin": 5.935434188586441e-07
+   },
+   "DPF-PSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 99.99999985081934,
+    "max_top": 199.99999601104406,
+    "tangent": 177,
+    "min_margin": 3.719253527378896e-08
+   },
+   "IDP": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.00074136759741,
+    "max_top": 199.9993709761929,
+    "tangent": 28,
+    "min_margin": 1.2549354657664935e-05
+   },
+   "SPSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 99.99999899999972,
+    "max_top": 200.00000100000014,
+    "tangent": 194,
+    "min_margin": 0.0
+   },
+   "SPSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 99.99999900000057,
+    "max_top": 200.0000009979435,
+    "tangent": 131,
+    "min_margin": 1.3059775483270641e-11
+   }
+  }
+ },
+ "heldout_eqtime": {
+  "band_along": false,
+  "n_paths": 2400,
+  "n_feasible": 2400,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": null,
+  "max_band_violation_reported_feasible": null,
+  "n_at_band_tolerance": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.99999999999983,
+  "max_top": null,
+  "per_method": {
+   "DE": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000155641530444,
+    "max_top": null,
+    "tangent": 50,
+    "min_margin": 7.839148778998606e-06
+   },
+   "IDP": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.001233913316867,
+    "max_top": null,
+    "tangent": 27,
+    "min_margin": 5.736021876145969e-06
+   },
+   "SPSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 19.99999999999983,
+    "max_top": null,
+    "tangent": 206,
+    "min_margin": 0.0
+   }
+  }
+ },
+ "heldout2": {
+  "band_along": false,
+  "n_paths": 4800,
+  "n_feasible": 4800,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": null,
+  "max_band_violation_reported_feasible": null,
+  "n_at_band_tolerance": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999773,
+  "max_top": null,
+  "per_method": {
+   "DE": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.0047665806037,
+    "max_top": null,
+    "tangent": 5,
+    "min_margin": 0.00022206388080547868
+   },
+   "DPF-PSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000444613731645,
+    "max_top": null,
+    "tangent": 133,
+    "min_margin": 6.743366753880764e-07
+   },
+   "DPF-PSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000088590869268,
+    "max_top": null,
+    "tangent": 145,
+    "min_margin": 1.120392170150808e-07
+   },
+   "IDP": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.001982442375258,
+    "max_top": null,
+    "tangent": 23,
+    "min_margin": 0.0001318512988746079
+   },
+   "SPSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 19.999999999999773,
+    "max_top": null,
+    "tangent": 177,
+    "min_margin": 0.0
+   },
+   "SPSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000000000022027,
+    "max_top": null,
+    "tangent": 141,
+    "min_margin": 7.257483503053663e-11
+   }
+  }
+ },
+ "heldout2_band": {
+  "band_along": true,
+  "n_paths": 4800,
+  "n_feasible": 4799,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": 1.001e-06,
+  "max_band_violation_reported_feasible": 1.0000003953791747e-06,
+  "n_at_band_tolerance": 28,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 99.9999989999996,
+  "max_top": 200.00000100000025,
+  "per_method": {
+   "DE": {
+    "n": 800,
+    "feasible": 799,
+    "min_clear": 100.00174461989309,
+    "max_top": 199.9952371275326,
+    "tangent": 2,
+    "min_margin": 0.0007110194449211349
+   },
+   "DPF-PSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.00000006675799,
+    "max_top": 199.99999361045238,
+    "tangent": 125,
+    "min_margin": 1.0466093200989235e-06
+   },
+   "DPF-PSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.00000215267703,
+    "max_top": 199.99998775940207,
+    "tangent": 139,
+    "min_margin": 2.660353004557692e-07
+   },
+   "IDP": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.0003737501466,
+    "max_top": 199.99939033044652,
+    "tangent": 28,
+    "min_margin": 2.9495437104287703e-05
+   },
+   "SPSO": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 99.9999989999996,
+    "max_top": 200.00000100000025,
+    "tangent": 157,
+    "min_margin": 0.0
+   },
+   "SPSO-T": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 99.9999990009157,
+    "max_top": 200.000000997932,
+    "tangent": 129,
+    "min_margin": 1.8524808353959088e-08
+   }
+  }
+ },
+ "heldout_grid": {
+  "band_along": false,
+  "n_paths": 160,
+  "n_feasible": 160,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": null,
+  "max_band_violation_reported_feasible": null,
+  "n_at_band_tolerance": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 20.050201218587574,
+  "max_top": null,
+  "per_method": {
+   "GridDP": {
+    "n": 160,
+    "feasible": 160,
+    "min_clear": 20.050201218587574,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.10734832921403381
+   }
+  }
+ }
+}

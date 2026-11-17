@@ -1,0 +1,1 @@
+{"tag": "n30", "runs": 20, "workers": 20, "instances": ["S1_n30", "S2_n30", "S3_n30", "S4_n30", "S5_n30", "S6_n30"], "algos": ["PSO", "SPSO", "GWO", "WOA", "HHO", "DE", "LSHADE", "CMAES", "IDP", "GLS", "DPF-PSO"], "budget_mult": 1.0, "mult": "", "seed": 20271101, "params": "{}", "skip_existing": true, "n_tasks": 1320, "started": "2026-11-05 18:46:34"}

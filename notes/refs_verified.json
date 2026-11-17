@@ -1,0 +1,182 @@
+{
+ "phung2021": {
+  "doi": "10.1016/j.asoc.2021.107376",
+  "title": "Safety-enhanced UAV path planning with spherical vector-based particle swarm optimization",
+  "authors": "Manh Duong Phung, Quang Phuc Ha",
+  "venue": "Applied Soft Computing",
+  "volume": "107",
+  "issue": "",
+  "pages": "107376",
+  "year": 2021
+ },
+ "kennedy1995": {
+  "doi": "10.1109/ICNN.1995.488968",
+  "title": "Particle swarm optimization",
+  "authors": "J. Kennedy, R. Eberhart",
+  "venue": "Proceedings of ICNN'95 - International Conference on Neural Networks",
+  "volume": "4",
+  "issue": "",
+  "pages": "1942-1948",
+  "year": null
+ },
+ "shi1998": {
+  "doi": "10.1109/ICEC.1998.699146",
+  "title": "A modified particle swarm optimizer",
+  "authors": "Y. Shi, R. Eberhart",
+  "venue": "1998 IEEE International Conference on Evolutionary Computation Proceedings. IEEE World Congress on Computational Intelligence (Cat. No.98TH8360)",
+  "volume": "",
+  "issue": "",
+  "pages": "69-73",
+  "year": null
+ },
+ "mirjalili2014": {
+  "doi": "10.1016/j.advengsoft.2013.12.007",
+  "title": "Grey Wolf Optimizer",
+  "authors": "Seyedali Mirjalili, Seyed Mohammad Mirjalili, Andrew Lewis",
+  "venue": "Advances in Engineering Software",
+  "volume": "69",
+  "issue": "",
+  "pages": "46-61",
+  "year": 2014
+ },
+ "mirjalili2016": {
+  "doi": "10.1016/j.advengsoft.2016.01.008",
+  "title": "The Whale Optimization Algorithm",
+  "authors": "Seyedali Mirjalili, Andrew Lewis",
+  "venue": "Advances in Engineering Software",
+  "volume": "95",
+  "issue": "",
+  "pages": "51-67",
+  "year": 2016
+ },
+ "heidari2019": {
+  "doi": "10.1016/j.future.2019.02.028",
+  "title": "Harris hawks optimization: Algorithm and applications",
+  "authors": "Ali Asghar Heidari, Seyedali Mirjalili, Hossam Faris, Ibrahim Aljarah, Majdi Mafarja, Huiling Chen",
+  "venue": "Future Generation Computer Systems",
+  "volume": "97",
+  "issue": "",
+  "pages": "849-872",
+  "year": 2019
+ },
+ "storn1997": {
+  "doi": "10.1023/A:1008202821328",
+  "title": "Differential Evolution – A Simple and Efficient Heuristic for global Optimization over Continuous Spaces",
+  "authors": "Rainer Storn, Kenneth Price",
+  "venue": "Journal of Global Optimization",
+  "volume": "11",
+  "issue": "4",
+  "pages": "341-359",
+  "year": 1997
+ },
+ "tanabe2014": {
+  "doi": "10.1109/CEC.2014.6900380",
+  "title": "Improving the search performance of SHADE using linear population size reduction",
+  "authors": "Ryoji Tanabe, Alex S. Fukunaga",
+  "venue": "2014 IEEE Congress on Evolutionary Computation (CEC)",
+  "volume": "",
+  "issue": "",
+  "pages": "1658-1665",
+  "year": 2014
+ },
+ "fu2012": {
+  "doi": "10.1109/TSMCA.2011.2159586",
+  "title": "Phase Angle-Encoded and Quantum-Behaved Particle Swarm Optimization Applied to Three-Dimensional Route Planning for UAV",
+  "authors": "Yangguang Fu, Mingyue Ding, Chengping Zhou",
+  "venue": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans",
+  "volume": "42",
+  "issue": "2",
+  "pages": "511-526",
+  "year": 2012
+ },
+ "aggarwal2020": {
+  "doi": "10.1016/j.comcom.2019.10.014",
+  "title": "Path planning techniques for unmanned aerial vehicles: A review, solutions, and challenges",
+  "authors": "Shubhani Aggarwal, Neeraj Kumar",
+  "venue": "Computer Communications",
+  "volume": "149",
+  "issue": "",
+  "pages": "270-299",
+  "year": 2020
+ },
+ "whitley2009": {
+  "doi": "10.1145/1569901.1570026",
+  "title": "Tunneling between optima",
+  "authors": "Darrell Whitley, Doug Hains, Adele Howe",
+  "venue": "Proceedings of the 11th Annual conference on Genetic and evolutionary computation",
+  "volume": "",
+  "issue": "",
+  "pages": "915-922",
+  "year": 2009
+ },
+ "tinos2020": {
+  "doi": "10.1162/evco_a_00254",
+  "title": "A New Generalized Partition Crossover for the Traveling Salesman Problem: Tunneling between Local Optima",
+  "authors": "Renato Tinós, Darrell Whitley, Gabriela Ochoa",
+  "venue": "Evolutionary Computation",
+  "volume": "28",
+  "issue": "2",
+  "pages": "255-288",
+  "year": 2020
+ },
+ "sorensen2015": {
+  "doi": "10.1111/itor.12001",
+  "title": "Metaheuristics—the metaphor exposed",
+  "authors": "Kenneth Sörensen",
+  "venue": "International Transactions in Operational Research",
+  "volume": "22",
+  "issue": "1",
+  "pages": "3-18",
+  "year": 2013
+ },
+ "derrac2011": {
+  "doi": "10.1016/j.swevo.2011.02.002",
+  "title": "A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms",
+  "authors": "Joaquín Derrac, Salvador García, Daniel Molina, Francisco Herrera",
+  "venue": "Swarm and Evolutionary Computation",
+  "volume": "1",
+  "issue": "1",
+  "pages": "3-18",
+  "year": 2011
+ },
+ "kavraki1996": {
+  "doi": "10.1109/70.508439",
+  "title": "Probabilistic roadmaps for path planning in high-dimensional configuration spaces",
+  "authors": "L.E. Kavraki, P. Svestka, J.-C. Latombe, M.H. Overmars",
+  "venue": "IEEE Transactions on Robotics and Automation",
+  "volume": "12",
+  "issue": "4",
+  "pages": "566-580",
+  "year": 1996
+ },
+ "karaman2011": {
+  "doi": "10.1177/0278364911406761",
+  "title": "Sampling-based algorithms for optimal motion planning",
+  "authors": "Sertac Karaman, Emilio Frazzoli",
+  "venue": "The International Journal of Robotics Research",
+  "volume": "30",
+  "issue": "7",
+  "pages": "846-894",
+  "year": 2011
+ },
+ "neri2012": {
+  "doi": "10.1016/j.swevo.2011.11.003",
+  "title": "Memetic algorithms and memetic computing optimization: A literature review",
+  "authors": "Ferrante Neri, Carlos Cotta",
+  "venue": "Swarm and Evolutionary Computation",
+  "volume": "2",
+  "issue": "",
+  "pages": "1-14",
+  "year": 2012
+ },
+ "liu2025": {
+  "doi": "10.1038/s41598-025-85912-4",
+  "title": "A spherical vector-based adaptive evolutionary particle swarm optimization for UAV path planning under threat conditions",
+  "authors": "Yanfei Liu, Hao Zhang, Hao Zheng, Qi Li, Qi Tian",
+  "venue": "Scientific Reports",
+  "volume": "15",
+  "issue": "1",
+  "pages": "2116",
+  "year": 2025
+ }
+}

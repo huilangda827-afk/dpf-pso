@@ -1,0 +1,9 @@
+[00:52:36] start tune_cmaes
+[00:52:36] end tune_cmaes
+[00:52:36] start heldout_band
+[02:52:57] end heldout_band
+[02:52:57] start heldout_abl
+[03:18:39] end heldout_abl
+[03:18:39] start heldout_eqtime
+[03:48:19] end heldout_eqtime
+[03:48:19] all done

@@ -1,0 +1,63 @@
+## kudela2022: A critical problem in benchmarking and analysis of evolutionary computation methods
+  - 10.1038/s42256-022-00579-0 | A critical problem in benchmarking and analysis of evolutionary computation methods | Kudela | Nature Machine Intelligence 4(12) 1238-1245 | 2022 | journal-article
+  - 10.1016/j.swevo.2018.10.002 | Benchmarking evolutionary algorithms for single objective real-valued constrained optimization ¨C A critical re | Hellwig, Beyer | Swarm and Evolutionary Computation 44() 927-944 | 2019 | journal-article
+  - 10.1145/3795101.3805436 | Scalable Benchmarking and Problem Instance Analysis using Machine Learning for Metaheuristics --- a Case Study | Olech, Myszkowski | Proceedings of the Genetic and Evolutionary Comput () 101-104 | 2026 | proceedings-article
+## aranha2022: Metaphor-based metaheuristics, a call for action: the elephant in the room
+  - 10.1007/s11721-021-00202-9 | Metaphor-based metaheuristics, a call for action: the elephant in the room | Aranha, Camacho Villal¨®n, Campelo | Swarm Intelligence 16(1) 1-6 | 2021 | journal-article
+  - 10.1093/oso/9780190937300.003.0007 | Smoking | Cabassa | Addressing Health Inequities in People with Seriou () 85-96 | 2023 | book-chapter
+  - 10.1287/ortm.2025.02.04 | When Optimization Meets Clickbait: Metaphor-Based Metaheuristics | Oskay | OR/MS Tomorrow 2025(2)  | 2025 | journal-article
+## hansen2021coco: COCO: a platform for comparing continuous optimizers in a black-box setting
+  - 10.1080/10556788.2020.1808977 | COCO: a platform for comparing continuous optimizers in a black-box setting | Hansen, Auger, Ros | Optimization Methods and Software 36(1) 114-144 | 2020 | journal-article
+  - 10.1145/3795101.3814675 | GNBG-III: A Property-Aware Benchmark Suite for Diagnosing Continuous Black-Box Optimizers | Salgotra, Deb, Gandomi | Proceedings of the Genetic and Evolutionary Comput () 1507-1510 | 2026 | proceedings-article
+  - 10.1145/3729878.3746699 | A Standardized Benchmark Set of Clustering Problem Instances for Comparing Black-Box Optimizers | Vermetten, Dinu, Gallagher | Proceedings of the 18th ACM/SIGEVO Conference on F () 297-307 | 2025 | proceedings-article
+## chicano2017: Optimizing one million variable NK landscapes by hybridizing deterministic recombination and local search
+  - 10.1145/3071178.3071285 | Optimizing one million variable NK landscapes by hybridizing deterministic recombination and local search | Chicano, Whitley, Ochoa | Proceedings of the Genetic and Evolutionary Comput () 753-760 | 2017 | proceedings-article
+  [FAIL] 'gbk' codec can't encode character '\xa0' in position 72: illegal multibyte sequence
+## jones2023: Path-planning for unmanned aerial vehicles with environment complexity considerations: A survey
+  - 10.1145/3570723 | Path-Planning for Unmanned Aerial Vehicles with Environment Complexity Considerations: A Survey | Jones, Djahel, Welsh | ACM Computing Surveys 55(11) 1-39 | 2023 | journal-article
+  - 10.31274/etd-180810-2898 | improving path planning of unmanned aerial vehicles in an immersive environment using meta-paths and terrain i | Swartzentruber |  ()  | None | dissertation
+  - 10.1002/9780470974636.ch3 | Path Planning in Three Dimensions |  | Cooperative Path Planning of Unmanned Aerial Vehic () 65-79 | 2010 | other
+## aitsaadi2022: UAV path planning using optimization approaches: A survey
+  - 10.1007/s11831-022-09742-7 | UAV Path Planning Using Optimization Approaches: A Survey | Ait Saadi, Soukane, Meraihi | Archives of Computational Methods in Engineering 29(6) 4233-4284 | 2022 | journal-article
+  - 10.2139/ssrn.5340267 | Metaheuristic Approaches for Uav Flight Path Optimization Using the Travelling Salesman Problem Model | Vazquez-Carmona, Sandoval-Gutierrez |  ()  | 2025 | posted-content
+  - 10.70675/295fef46z79b1z4093z8679z901e2c9bd804 | UAV search path planning for cattle monitoring : From linear programming to learning-based approaches | Benalaya |  ()  | None | dissertation
+## debnath2024: A review of UAV path-planning algorithms and obstacle avoidance methods for remote sensing applications
+  - 10.3390/rs16214019 | A Review of UAV Path-Planning Algorithms and Obstacle Avoidance Methods for Remote Sensing Applications | Debnath, Vanegas, Sandino | Remote Sensing 16(21) 4019 | 2024 | journal-article
+  - 10.1016/j.robot.2026.105636 | Towards UAV path-planning algorithms and obstacle avoidance methods: A comprehensive review | Chen, Zheng, Liu | Robotics and Autonomous Systems 205() 105636 | 2026 | journal-article
+  - 10.3390/rs13163265 | Review of Collision Avoidance and Path Planning Methods for Ships Utilizing Radar Remote Sensing | Lazarowska | Remote Sensing 13(16) 3265 | 2021 | journal-article
+## qu2020: A novel reinforcement learning based grey wolf optimizer algorithm for unmanned aerial vehicles (UAVs) path planning
+  - 10.1016/j.asoc.2020.106099 | A novel reinforcement learning based grey wolf optimizer algorithm for unmanned aerial vehicles (UAVs) path pl | Qu, Gai, Zhong | Applied Soft Computing 89() 106099 | 2020 | journal-article
+  - 10.1016/j.knosys.2020.105530 | A novel hybrid grey wolf optimizer algorithm for unmanned aerial vehicle (UAV) path planning | Qu, Gai, Zhang | Knowledge-Based Systems 194() 105530 | 2020 | journal-article
+  - 10.3390/s22051826 | Parallel Cooperative Coevolutionary Grey Wolf Optimizer for Path Planning Problem of Unmanned Aerial Vehicles | Jarray, Al-Dhaifallah, Rezk | Sensors 22(5) 1826 | 2022 | journal-article
+## yu2020: A constrained differential evolution algorithm to solve UAV path planning in disaster scenarios
+  - 10.1016/j.knosys.2020.106209 | A constrained differential evolution algorithm to solve UAV path planning in disaster scenarios | Yu, Li, Zhou | Knowledge-Based Systems 204() 106209 | 2020 | journal-article
+  - 10.1109/icus58632.2023.10318396 | Adaptive Multi-Swarm Differential Evolution Algorithm for UAV Path Planning | Wu, Meng, Chen | 2023 IEEE International Conference on Unmanned Sys () 725-730 | 2023 | proceedings-article
+  - 10.1109/access.2021.3050764 | Exponential Rank Differential Evolution Algorithm for Disaster Emergency Vehicle Path Planning | Zhang, Yu, Wu | IEEE Access 9() 10880-10892 | 2021 | journal-article
+## phung2020: Motion-encoded particle swarm optimization for moving target search using UAVs
+  - 10.36227/techrxiv.13333298.v1 | Motion-Encoded Particle Swarm Optimization for Moving Target Search Using UAVs | Phung |  ()  | 2020 | posted-content
+  - 10.36227/techrxiv.13333298 | Motion-Encoded Particle Swarm Optimization for Moving Target Search Using UAVs | Phung |  ()  | 2020 | posted-content
+  - 10.1016/j.asoc.2020.106705 | Motion-encoded particle swarm optimization for moving target search using UAVs | Phung, Ha | Applied Soft Computing 97() 106705 | 2020 | journal-article
+## nosek2018: The preregistration revolution
+  - 10.31219/osf.io/2dxu5 | The Preregistration Revolution | Nosek, Ebersole, DeHaven |  ()  | 2017 | posted-content
+  - 10.55277/researchhub.r9q2sa6x | Preregistration Template 28.5.2025 | Tytarenko |  ()  | 2025 | report
+  - 10.55277/researchhub.oq5sn7ne | Preregistration Template | Tytarenko |  ()  | 2025 | report
+## derrac2011: A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary and swarm intelligence algorithms
+  - 10.1016/j.swevo.2011.02.002 | A practical tutorial on the use of nonparametric statistical tests as a methodology for comparing evolutionary | Derrac, Garc¨ªa, Molina | Swarm and Evolutionary Computation 1(1) 3-18 | 2011 | journal-article
+  - 10.1016/j.swevo.2020.100665 | Recent trends in the use of statistical tests for comparing swarm and evolutionary computing algorithms: Pract | Carrasco, Garc¨ªa, Rueda | Swarm and Evolutionary Computation 54() 100665 | 2020 | journal-article
+  - 10.1201/9780429422614-1 | Swarm Intelligence Algorithms: A Tutorial | Singh, Meena, Yang | Swarm Intelligence Algorithms () 1-15 | 2020 | book-chapter
+## campelo2023: Lessons from the evolutionary computation Bestiary
+  - 10.1162/artl_a_00402 | Lessons from the <i>Evolutionary Computation Bestiary</i> | Campelo, Aranha | Artificial Life 29(4) 421-432 | 2023 | journal-article
+  - 10.1162/evco.1996.4.3.271 | How to Shift Bias: Lessons from the Baldwin Effect | Turney | Evolutionary Computation 4(3) 271-295 | 1996 | journal-article
+  - 10.1145/3638529.3665089 | Lessons from curiosity-driven physics research | Sheehy | Proceedings of the Genetic and Evolutionary Comput () 2-2 | 2024 | proceedings-article
+## pivtoraiko2009: Differentially constrained mobile robot motion planning in state lattices
+  - 10.1002/rob.20285 | Differentially constrained mobile robot motion planning in state lattices | Pivtoraiko, Knepper, Kelly | Journal of Field Robotics 26(3) 308-333 | 2009 | journal-article
+  - 10.1109/lra.2024.3518074/mm1 | Homotopy-Aware Efficiently Adaptive State Lattices for Mobile Robot Motion Planning in Cluttered Environments_ | Menon |  ()  | None | component
+  - 10.1109/iros.2008.4651220 | Differentially constrained motion replanning using state lattices with graduated fidelity | Pivtoraiko, Kelly | 2008 IEEE/RSJ International Conference on Intellig () 2611-2616 | 2008 | proceedings-article
+## drones_pso_2024: improved particle swarm optimization three-dimensional UAV path planning
+  - 10.3390/math11091987 | Three-Dimensional Path Planning of UAV Based on Improved Particle Swarm Optimization | Deng, Chen, Zhang | Mathematics 11(9) 1987 | 2023 | journal-article
+  - 10.1109/icisce50968.2020.00243 | Research on Path planning of Three-Dimensional UAV Based on Levy Flight Strategy and Improved Particle Swarm O | Guopeng, Jiangbing | 2020 7th International Conference on Information S () 1199-1203 | 2020 | proceedings-article
+  - 10.2139/ssrn.4294403 | Three-Dimensional Path Planning for Auvs in Ocean Currents Environment Based on an Improved Compression Factor | Li, Yu |  ()  | 2022 | posted-content
+## drones_de_2025: differential evolution UAV path planning threat terrain
+  - 10.1109/icaace69793.2026.11508666 | Parameter Sensitivity Optimization of Differential Evolution Algorithm for UAV 3D Path Planning in Complex Mou | Zhong | 2026 9th International Conference on Advanced Algo () 1533-1536 | 2026 | proceedings-article
+  - 10.2139/ssrn.7309911 | A Variance-Ratio State-Adaptive Differential Evolution for UAV Path Planning | Cheng, Wang, Qiu |  ()  | 2026 | posted-content
+  - 10.1109/icus58632.2023.10318396 | Adaptive Multi-Swarm Differential Evolution Algorithm for UAV Path Planning | Wu, Meng, Chen | 2023 IEEE International Conference on Unmanned Sys () 725-730 | 2023 | proceedings-article
