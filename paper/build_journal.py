@@ -222,6 +222,8 @@ def prose_journal(v, S):
         v["heq_all_text"] = ""
         v["heq_reused"] = "none"
     Hp = S.get("heldout_plugin")
+    if Hp and not all(f"{h}|{n}" in Hp["tests"] for h in Hp["hosts"] for n in NS):
+        Hp = None                                     # runs still in progress
     if Hp:
         hosts = Hp["hosts"]
         sigs = {h: tuple(Hp["tests"][f"{h}|{n}"]["sig"] for n in NS) for h in hosts}
