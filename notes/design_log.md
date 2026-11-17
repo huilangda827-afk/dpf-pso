@@ -493,3 +493,24 @@ and are labelled as such; predictions are written here before the runs.
   disappears.  Families: original model, 4 tests vs DPF-PSO; band model,
   4 tests vs DPF-PSO; descriptive comparison with the slot versions.
   Reported whatever the outcome.
+
+## 19. Results of section 18, part A (runs 15:01–17:21 on 2026-11-17)
+
+* **18a, equal CPU time, all baselines (20 tests, Holm).**  DPF-PSO
+  significantly better than PSO, GWO, WOA, HHO, DE, L-SHADE, CMA-ES and GLS
+  for both n, than IDP for n = 10 (+0.6 %); not significantly different
+  from IDP for n = 20 (−0.2 %) and from SPSO for either n (+0.1 %, +4.4 %).
+  CMA-ES and GLS (multiplier 1.0) reuse their held-out runs.  Prediction
+  held.  Safety check heldout_eqtime: 6,400 paths, 0 disagreements.
+* **18c, plug-in on H01–H40 (10 tests, Holm).**  Every host improved
+  significantly for both n: GWO +12.4 % / +23.6 %, WOA +16.5 % / +21.1 %,
+  HHO +10.3 % / +17.7 %, DE +2.7 % / +8.6 %, L-SHADE +2.5 % / +9.7 %
+  (n = 10 / 20).  Prediction held.
+* **18d, b4 = 10 on S1–S6 (10 runs).**  DPF-PSO first in mean rank (1.83),
+  lowest median on 5 of 12 instances, no method significantly better on any
+  instance; median gap to the best black-box method 10.1 % against 4.7 %
+  under the published weights.  Prediction held.  Safety check b4: 1,320
+  paths, 0 disagreements.
+* **18g (existing data).**  n = 20: 88 % of DPF-PSO paths without a turn
+  sharper than 45° (other methods 9–87 %), 56 % without a climb-angle
+  change above 30° (others 7–52 %).
