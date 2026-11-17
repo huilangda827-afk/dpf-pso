@@ -58,3 +58,7 @@ Pillow, python-docx, pywin32 and Microsoft Word (PDF export), pandoc 2.12,
 PyMuPDF (page previews).  Seeds: tuning 30270000 + r, final runs
 20271101 + r (run r of every method uses the same seed), timing
 40270000 + r, held-out scenario k from 90210 + k.
+
+## Licence
+
+Code: MIT (`LICENSE`). Results, figures, design log and manuscript sources: CC BY 4.0 (`LICENSE-DATA.md`).

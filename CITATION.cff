@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the article (reference to be added on publication) and this repository."
+title: "DPF-PSO: dynamic-programming path fusion for swarm-based 3-D UAV path planning"
+authors:
+  - family-names: Bai
+    given-names: Hongyu
+    affiliation: "School of Artificial Intelligence, Beijing University of Posts and Telecommunications"
+repository-code: "https://github.com/huilangda827-afk/dpf-pso"
+license: MIT
+date-released: 2026-11-17
