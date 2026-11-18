@@ -186,14 +186,18 @@ As Table S2, with the tuned configurations; Holm over the 10 tests of this table
 
 | Compared method | n | Win / loss | Δ̃ [Q1, Q3] | Median A12 | Within-scenario +/≈/− | p | p~H~ |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| PSO | 10 | 88% / 12% | +5.4% [+1.5%, +11.3%] | 0.82 | 19/20/1 | <0.001 | <0.001 |
-| PSO | 20 | 100% / 0% | +16.6% [+10.6%, +20.0%] | 0.97 | 38/2/0 | <0.001 | <0.001 |
-| w/o global fusion | 10 | 85% / 15% | +1.8% [+0.4%, +4.9%] | 0.66 | 10/29/1 | <0.001 | <0.001 |
-| w/o global fusion | 20 | 100% / 0% | +8.4% [+4.3%, +12.2%] | 0.94 | 32/8/0 | <0.001 | <0.001 |
-| greedy instead of DP | 10 | 80% / 20% | +1.6% [+0.3%, +5.2%] | 0.78 | 17/23/0 | <0.001 | <0.001 |
-| greedy instead of DP | 20 | 85% / 15% | +3.8% [+1.5%, +8.1%] | 0.85 | 23/17/0 | <0.001 | <0.001 |
+| PSO | 10 | 88% / 12% | +5.4% [+1.5%, +11.3%] | 0.82 | 14/26/0 | <0.001 | <0.001 |
+| PSO | 20 | 100% / 0% | +16.6% [+10.6%, +20.0%] | 0.97 | 37/3/0 | <0.001 | <0.001 |
+| w/o global fusion | 10 | 85% / 15% | +1.8% [+0.4%, +4.9%] | 0.66 | 8/32/0 | <0.001 | <0.001 |
+| w/o global fusion | 20 | 100% / 0% | +8.4% [+4.3%, +12.2%] | 0.94 | 28/12/0 | <0.001 | <0.001 |
+| greedy instead of DP | 10 | 80% / 20% | +1.6% [+0.3%, +5.2%] | 0.78 | 16/24/0 | <0.001 | <0.001 |
+| greedy instead of DP | 20 | 85% / 15% | +3.8% [+1.5%, +8.1%] | 0.85 | 21/19/0 | <0.001 | <0.001 |
 | fusion only (no PSO moves) | 10 | 100% / 0% | +1.9% [+1.4%, +2.3%] | 0.91 | 25/15/0 | <0.001 | <0.001 |
-| fusion only (no PSO moves) | 20 | 98% / 2% | +1.0% [+0.6%, +1.3%] | 0.70 | 11/29/0 | <0.001 | <0.001 |
+| fusion only (no PSO moves) | 20 | 98% / 2% | +1.0% [+0.6%, +1.3%] | 0.70 | 8/32/0 | <0.001 | <0.001 |
+| w/o periodic global fusion | 10 | 38% / 62% | −0.1% [−0.2%, +0.1%] | 0.46 | 0/40/0 | 0.082 | 0.154 |
+| w/o periodic global fusion | 20 | 100% / 0% | +2.6% [+1.9%, +3.3%] | 0.81 | 15/25/0 | <0.001 | <0.001 |
+| fixed σ schedule | 10 | 32% / 68% | −0.1% [−0.2%, +0.1%] | 0.46 | 0/40/0 | 0.077 | 0.154 |
+| fixed σ schedule | 20 | 8% / 92% | −0.5% [−0.6%, −0.2%] | 0.38 | 0/33/7 | <0.001 | <0.001 |
 
 : TABLE S4e. Held-Out Scenarios at Equal CPU Time: DPF-PSO (Normal Budget) against Baselines with Multiplied Budgets
 
@@ -239,7 +243,7 @@ As Table S2, with the tuned configurations; Holm over the 10 tests of this table
 | SPSO | 20 | 95% / 5% | +4.6% [+2.7%, +7.4%] | 0.87 | 30/9/1 | <0.001 | <0.001 |
 
 ::: {custom-style="TableNote"}
-Columns as in Table S2. Holm correction over the 8 tests of Table S4d, the 20 tests of Table S4e, and the 8 tests of Tables S4f and S4g together.
+Columns as in Table S2. Holm correction over the 12 tests of Table S4d, the 20 tests of Table S4e, and the 8 tests of Tables S4f and S4g together.
 :::
 
 : TABLE S4h. Share of Runs with a Feasible Final Path, Altitude Band Enforced along Every Segment
@@ -594,21 +598,22 @@ CPU times come from a separate benchmark (`src/timing_benchmark.py`): 8 worker p
 
 # S10. Safety Check
 
-Every final path of every experiment was re-checked by `src/verify_paths.py`, which does not use the cost function: threat distances are computed with an analytic point-to-segment distance in a plain loop, and ground clearance with the independent exact implementation of S1. A path is independently feasible if it keeps a horizontal distance of at least $R_k+D$ from every threat centre and an exact clearance of at least 20 m (tolerance $10^{-6}$ m). In the experiment with the altitude band enforced along the segments (9,600 of the paths in Table S15), a path must in addition stay at least 100 m and at most 200 m above the ground along every segment; the maximum height is computed by the same independent implementation applied to the mirrored terrain $-Z$. In this variant the cost function ignores band violations of up to $10^{-6}$ m (S4), and optimizers can end exactly on that tolerance: for 57 paths that the cost function accepted, the check computed a band violation slightly above $10^{-6}$ m, at most $1.000000395\times10^{-6}$ m. Because two independent floating-point implementations cannot agree on which side of the same threshold such a path lies, the check accepts band violations of up to $10^{-6}$ m plus $10^{-9}$ m for rounding. With the check's first setting, an identical tolerance of $10^{-6}$ m, these 57 paths were reported as disagreements.
+Every final path of every experiment was re-checked by `src/verify_paths.py`, which does not use the cost function: threat distances are computed with an analytic point-to-segment distance in a plain loop, and ground clearance with the independent exact implementation of S1. A path is independently feasible if it keeps a horizontal distance of at least $R_k+D$ from every threat centre and an exact clearance of at least 20 m (tolerance $10^{-6}$ m). In the experiment with the altitude band enforced along the segments (11,200 of the paths in Table S15), a path must in addition stay at least 100 m and at most 200 m above the ground along every segment; the maximum height is computed by the same independent implementation applied to the mirrored terrain $-Z$. In this variant the cost function ignores band violations of up to $10^{-6}$ m (S4), and optimizers can end exactly on that tolerance: for 57 paths that the cost function accepted, the check computed a band violation slightly above $10^{-6}$ m, at most $1.000000395\times10^{-6}$ m. Because two independent floating-point implementations cannot agree on which side of the same threshold such a path lies, the check accepts band violations of up to $10^{-6}$ m plus $10^{-9}$ m for rounding. With the check's first setting, an identical tolerance of $10^{-6}$ m, these 57 paths were reported as disagreements.
 
 : TABLE S15. Independent Check of All Final Paths
 
 | Experiment | Paths | Independently feasible | Disagreements | Reported feasible but infeasible | Min. exact clearance (m) | Max. height above ground (m) |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|
 | S1–S6 | 11,160 | 11,126 | 0 | 0 | 20.000 | — |
-| H01–H40 | 15,200 | 15,164 | 0 | 0 | 20.000 | — |
+| H01–H40 | 23,200 | 23,162 | 0 | 0 | 20.000 | — |
 | C1 | 960 | 956 | 0 | 0 | 85.344 | — |
 | Equal CPU time | 3,600 | 3,593 | 1 | 0 | 20.000 | — |
 | n = 30 | 1,320 | 1,280 | 0 | 0 | 20.000 | — |
 | 5× budget | 1,320 | 1,317 | 1 | 0 | 20.000 | — |
 | b~2~ = 10 | 1,320 | 1,315 | 0 | 0 | 20.000 | — |
-| H01–H40, equal CPU time | 2,400 | 2,400 | 0 | 0 | 20.000 | — |
-| H01–H40, band along segments | 4,800 | 4,799 | 0 | 0 | 100.000 | 200.000 |
+| b~4~ = 10 | 1,320 | 1,316 | 0 | 0 | 20.000 | — |
+| H01–H40, equal CPU time | 6,400 | 6,377 | 0 | 0 | 20.000 | — |
+| H01–H40, band along segments | 6,400 | 6,392 | 0 | 0 | 100.000 | 200.000 |
 | H41–H80 | 4,800 | 4,800 | 0 | 0 | 20.000 | — |
 | H41–H80, band along segments | 4,800 | 4,799 | 0 | 0 | 100.000 | 200.000 |
 | H01–H80, lattice DP | 160 | 160 | 0 | 0 | 20.050 | — |
@@ -739,6 +744,7 @@ GridDP (Section 5.2) places, in every slot, a regular lattice of $n_u$ lateral o
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|
 | *Lattice DP, H01–H40:* GridDP | 95% | +1.8% | <0.001^+^ | 75% | +1.6% | 0.001^+^ |
 | *Lattice DP, H41–H80:* GridDP | 85% | +1.7% | <0.001^+^ | 88% | +2.0% | <0.001^+^ |
+| *Local optimizer, H01–H40:* MS-Powell | 95% | +4.1% | <0.001^+^ | 100% | +19.2% | <0.001^+^ |
 
 # S14. CPU-Time Convergence
 
@@ -786,27 +792,43 @@ Runs of `src/timing_curves.py`: one worker per performance core, each pinned to 
 
 | Compared with | Win~10~ | Δ̃~10~ | p~H,10~ | Win~20~ | Δ̃~20~ | p~H,20~ |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|
-| ** GWO | 100% | +22.2% | <0.001^+^ |
-| WOA | 95% | +22.4% | <0.001^+^ |
-| HHO | 90% | +18.0% | <0.001^+^ |
-| DE | 95% | +8.7% | <0.001^+^ |
-| L-SHADE | 86% | +10.0% | <0.001^+^ |
+| ** GWO | 100% | +12.4% | <0.001^+^ | 100% | +23.6% | <0.001^+^ |
+| WOA | 100% | +16.5% | <0.001^+^ | 98% | +21.1% | <0.001^+^ |
+| HHO | 98% | +10.3% | <0.001^+^ | 95% | +17.7% | <0.001^+^ |
+| DE | 55% | +2.7% | 0.001^+^ | 90% | +8.6% | <0.001^+^ |
+| L-SHADE | 62% | +2.5% | 0.001^+^ | 82% | +9.7% | <0.001^+^ |
 
 : TABLE S15c. Spherical Encoding Against the Slot Encoding (DE and CMA-ES, Original Model)
 
-[MISSING:S_SPH_VS_SLOT]
+| Method | Δ̃~10~ (spherical vs. slot) | p~H,10~ | Δ̃~20~ | p~H,20~ |
+|:--|:-:|:-:|:-:|:-:|
+| DE | +6.7% | <0.001^+^ | +16.1% | <0.001^+^ |
+| CMA-ES | +16.6% | <0.001^+^ | +21.8% | <0.001^+^ |
 
 : TABLE S15d. DE and CMA-ES on the Spherical Encoding Against DPF-PSO, Original Model
 
-[MISSING:S_SPH]
+| Compared method | n | Win / loss | Δ̃ [Q1, Q3] | Median A12 | Within-scenario +/≈/− | p | p~H~ |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| DE (spherical) | 10 | 22% / 78% | −3.1% [−7.9%, −0.5%] | 0.03 | 5/9/26 | <0.001 | <0.001 |
+| DE (spherical) | 20 | 18% / 82% | −4.8% [−9.1%, −2.2%] | 0.00 | 2/6/32 | <0.001 | <0.001 |
+| CMA-ES (spherical) | 10 | 20% / 80% | −4.4% [−8.4%, −2.1%] | 0.03 | 1/11/28 | <0.001 | <0.001 |
+| CMA-ES (spherical) | 20 | 8% / 92% | −7.9% [−12.3%, −4.0%] | 0.00 | 1/5/34 | <0.001 | <0.001 |
 
 : TABLE S15e. DE and CMA-ES on the Spherical Encoding Against DPF-PSO, Band Model
 
-[MISSING:S_SPH_BAND]
+| Compared method | n | Win / loss | Δ̃ [Q1, Q3] | Median A12 | Within-scenario +/≈/− | p | p~H~ |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| DE (spherical) | 10 | 57% / 42% | +1.1% [−1.1%, +4.7%] | 0.73 | 17/8/15 | 0.015 | 0.046 |
+| DE (spherical) | 20 | 35% / 65% | −1.9% [−3.4%, +1.0%] | 0.14 | 8/11/21 | 0.314 | 0.628 |
+| CMA-ES (spherical) | 10 | 45% / 55% | −0.8% [−2.1%, +2.2%] | 0.38 | 8/19/13 | 0.806 | 0.806 |
+| CMA-ES (spherical) | 20 | 18% / 82% | −3.0% [−4.3%, −1.0%] | 0.12 | 3/14/23 | <0.001 | 0.002 |
 
 : TABLE S15f. Multi-Start Powell Against DPF-PSO on H01–H40
 
-[MISSING:S_MSP]
+| Compared method | n | Win / loss | Δ̃ [Q1, Q3] | Median A12 | Within-scenario +/≈/− | p | p~H~ |
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| multi-start Powell | 10 | 95% / 5% | +4.1% [+1.4%, +7.7%] | 0.93 | 27/13/0 | <0.001 | <0.001 |
+| multi-start Powell | 20 | 100% / 0% | +19.2% [+15.7%, +23.4%] | 1.00 | 40/0/0 | <0.001 | <0.001 |
 
 : TABLE S15g. Weight Sensitivity $b_4=10$ on S1–S6 (10 Runs; Columns as in Table S5a)
 

@@ -514,3 +514,33 @@ and are labelled as such; predictions are written here before the runs.
 * **18g (existing data).**  n = 20: 88 % of DPF-PSO paths without a turn
   sharper than 45° (other methods 9–87 %), 56 % without a climb-angle
   change above 30° (others 7–52 %).
+
+## 20. Results of section 18, part B (runs 17:23–18:58 on 2026-11-17)
+
+* **18b, ablation (joined to the held-out ablation family, Holm over 12
+  tests).**  Without periodic global fusion: n = 10 not different
+  (−0.1 %), n = 20 significantly worse (+2.6 %).  Fixed step size: n = 10
+  not different (−0.1 %), n = 20 significantly *better* than DPF-PSO
+  (−0.5 %, wins 92 % of scenarios).  The prediction (neither component
+  matters) held for n = 10 and failed for n = 20: periodic global fusion
+  contributes for n = 20, the step-size adaptation does not and is slightly
+  harmful for n = 20.  DPF-PSO is not changed; the paper reports this.
+* **18e, multi-start Powell (2 tests).**  DPF-PSO better for both n
+  (+4.1 %, +19.2 %).
+* **18f, spherical encoding.**  Against their slot-encoded versions, DE
+  improved by 6.7 % / 16.1 % and CMA-ES by 16.6 % / 21.8 % (n = 10 / 20, all
+  significant).  Original model, against DPF-PSO (4 tests): DE-sph and
+  CMAES-sph significantly better for both n; DPF-PSO's median cost higher
+  by 3.1 % / 4.8 % (DE) and 4.4 % / 7.9 % (CMA-ES).  Band model (4 tests):
+  DPF-PSO better than DE-sph for n = 10 (+1.1 %), not different for n = 20
+  (−1.9 %); not different from CMAES-sph for n = 10 (−0.8 %), CMAES-sph
+  better for n = 20 (−3.0 %).  Against the addendum prediction: the gain
+  over the slot versions held; "competitive with DPF-PSO for n = 10" was
+  too weak (they were better for both n); "the advantage disappears under
+  the band model" held except for CMA-ES with n = 20.  Interpretation: most
+  of the advantage of the spherical encoding comes from the waypoint-only
+  band check, the rest from merging waypoints within the band.  This is a
+  limitation of the slot encoding, reported in the abstract, highlights,
+  contributions, Section 6.3, discussion and conclusion.
+* Safety check heldout (with all new variants) and heldout_band: 0
+  disagreements; CMAES-sph under the band model 98.5 % / 99.7 % feasible.

@@ -230,8 +230,8 @@
  },
  "heldout": {
   "band_along": false,
-  "n_paths": 15200,
-  "n_feasible": 15164,
+  "n_paths": 23200,
+  "n_feasible": 23162,
   "n_mismatch": 0,
   "tol": 1e-06,
   "tol_band": null,
@@ -252,6 +252,14 @@
     "tangent": 12,
     "min_margin": 8.073727102697603e-05
    },
+   "CMAES-sph": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.00012538177903,
+    "max_top": null,
+    "tangent": 9,
+    "min_margin": 6.507893868246128e-05
+   },
    "DE": {
     "n": 800,
     "feasible": 800,
@@ -260,6 +268,14 @@
     "tangent": 4,
     "min_margin": 0.00012424771631458498
    },
+   "DE+DPF": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.01388997532746,
+    "max_top": null,
+    "tangent": 20,
+    "min_margin": 4.2332665351807464e-05
+   },
    "DE-T": {
     "n": 800,
     "feasible": 800,
@@ -267,6 +283,14 @@
     "max_top": null,
     "tangent": 1,
     "min_margin": 0.0004790825030625001
+   },
+   "DE-sph": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000207097182653,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.0014765866767163516
    },
    "DPF-PSO": {
     "n": 800,
@@ -292,6 +316,14 @@
     "tangent": 12,
     "min_margin": 0.000438229675552293
    },
+   "DPF-PSO_noA": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000283957516217,
+    "max_top": null,
+    "tangent": 160,
+    "min_margin": 2.2784114150908863e-08
+   },
    "DPF-PSO_noG": {
     "n": 800,
     "feasible": 800,
@@ -299,6 +331,14 @@
     "max_top": null,
     "tangent": 219,
     "min_margin": 5.558717930398416e-10
+   },
+   "DPF-PSO_noPG": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000086114085207,
+    "max_top": null,
+    "tangent": 180,
+    "min_margin": 3.667949499686074e-09
    },
    "DPF-only": {
     "n": 800,
@@ -324,6 +364,14 @@
     "tangent": 0,
     "min_margin": 0.002509982162372637
    },
+   "GWO+DPF": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.215932440418385,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.0012275974863840133
+   },
    "HHO": {
     "n": 800,
     "feasible": 797,
@@ -331,6 +379,14 @@
     "max_top": null,
     "tangent": 13,
     "min_margin": 3.144635222440684e-05
+   },
+   "HHO+DPF": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.012476755386672,
+    "max_top": null,
+    "tangent": 31,
+    "min_margin": 1.5022294519440038e-10
    },
    "IDP": {
     "n": 800,
@@ -356,6 +412,14 @@
     "tangent": 30,
     "min_margin": 2.944904466062326e-06
    },
+   "LSHADE+DPF": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.02832452029793,
+    "max_top": null,
+    "tangent": 4,
+    "min_margin": 0.0004031411644049854
+   },
    "LSHADE-T": {
     "n": 800,
     "feasible": 800,
@@ -363,6 +427,14 @@
     "max_top": null,
     "tangent": 237,
     "min_margin": 7.82477371785717e-09
+   },
+   "MS-Powell": {
+    "n": 800,
+    "feasible": 798,
+    "min_clear": 20.000000553483318,
+    "max_top": null,
+    "tangent": 63,
+    "min_margin": 3.995353381469613e-09
    },
    "PSO": {
     "n": 800,
@@ -395,6 +467,14 @@
     "max_top": null,
     "tangent": 191,
     "min_margin": 4.495078087529691e-09
+   },
+   "WOA+DPF": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.037833520197808,
+    "max_top": null,
+    "tangent": 32,
+    "min_margin": 3.167151305660809e-07
    }
   }
  },
@@ -897,8 +977,8 @@
  },
  "heldout_band": {
   "band_along": true,
-  "n_paths": 4800,
-  "n_feasible": 4799,
+  "n_paths": 6400,
+  "n_feasible": 6392,
   "n_mismatch": 0,
   "tol": 1e-06,
   "tol_band": 1.001e-06,
@@ -911,6 +991,14 @@
   "min_clear": 99.99999899999972,
   "max_top": 200.00000100000014,
   "per_method": {
+   "CMAES-sph": {
+    "n": 800,
+    "feasible": 793,
+    "min_clear": 99.99999999999997,
+    "max_top": 200.00000004535852,
+    "tangent": 6,
+    "min_margin": 5.941675077281161e-05
+   },
    "DE": {
     "n": 800,
     "feasible": 799,
@@ -918,6 +1006,14 @@
     "max_top": 199.99175464106992,
     "tangent": 2,
     "min_margin": 0.00014336491489075343
+   },
+   "DE-sph": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 100.00014710679258,
+    "max_top": 199.9936561588225,
+    "tangent": 0,
+    "min_margin": 0.0025411671684025805
    },
    "DPF-PSO": {
     "n": 800,
@@ -963,8 +1059,8 @@
  },
  "heldout_eqtime": {
   "band_along": false,
-  "n_paths": 2400,
-  "n_feasible": 2400,
+  "n_paths": 6400,
+  "n_feasible": 6377,
   "n_mismatch": 0,
   "tol": 1e-06,
   "tol_band": null,
@@ -985,6 +1081,22 @@
     "tangent": 50,
     "min_margin": 7.839148778998606e-06
    },
+   "GWO": {
+    "n": 800,
+    "feasible": 791,
+    "min_clear": 20.006764535763295,
+    "max_top": null,
+    "tangent": 2,
+    "min_margin": 2.2443245796921474e-05
+   },
+   "HHO": {
+    "n": 800,
+    "feasible": 796,
+    "min_clear": 20.0117801011736,
+    "max_top": null,
+    "tangent": 12,
+    "min_margin": 5.504077194018464e-10
+   },
    "IDP": {
     "n": 800,
     "feasible": 800,
@@ -993,6 +1105,22 @@
     "tangent": 27,
     "min_margin": 5.736021876145969e-06
    },
+   "LSHADE": {
+    "n": 800,
+    "feasible": 800,
+    "min_clear": 20.000023136833306,
+    "max_top": null,
+    "tangent": 67,
+    "min_margin": 4.625777876299253e-07
+   },
+   "PSO": {
+    "n": 800,
+    "feasible": 796,
+    "min_clear": 20.000095322563595,
+    "max_top": null,
+    "tangent": 93,
+    "min_margin": 9.673847756630494e-06
+   },
    "SPSO": {
     "n": 800,
     "feasible": 800,
@@ -1000,6 +1128,14 @@
     "max_top": null,
     "tangent": 206,
     "min_margin": 0.0
+   },
+   "WOA": {
+    "n": 800,
+    "feasible": 794,
+    "min_clear": 20.001813630578795,
+    "max_top": null,
+    "tangent": 236,
+    "min_margin": 9.808331924432423e-11
    }
   }
  },
@@ -1158,6 +1294,112 @@
     "max_top": null,
     "tangent": 0,
     "min_margin": 0.10734832921403381
+   }
+  }
+ },
+ "b4": {
+  "band_along": false,
+  "n_paths": 1320,
+  "n_feasible": 1316,
+  "n_mismatch": 0,
+  "tol": 1e-06,
+  "tol_band": null,
+  "max_band_violation_reported_feasible": null,
+  "n_at_band_tolerance": 0,
+  "n_reported_feasible_but_infeasible": 0,
+  "n_rejected_but_feasible": 0,
+  "mismatches": [],
+  "mismatch_records": [],
+  "min_clear": 19.999999999999506,
+  "max_top": null,
+  "per_method": {
+   "CMAES": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001092109964212,
+    "max_top": null,
+    "tangent": 2,
+    "min_margin": 0.0005990993944067213
+   },
+   "DE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.098818659202692,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.00459101539653517
+   },
+   "DPF-PSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.00000012489526,
+    "max_top": null,
+    "tangent": 11,
+    "min_margin": 4.7020330015357104e-05
+   },
+   "GLS": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.0000842967034,
+    "max_top": null,
+    "tangent": 28,
+    "min_margin": 2.943902501328921e-06
+   },
+   "GWO": {
+    "n": 120,
+    "feasible": 117,
+    "min_clear": 20.004574663067444,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.004554958611265647
+   },
+   "HHO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.021868874762845,
+    "max_top": null,
+    "tangent": 1,
+    "min_margin": 0.0009124929517270175
+   },
+   "IDP": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001792206117752,
+    "max_top": null,
+    "tangent": 4,
+    "min_margin": 0.0002910017882697957
+   },
+   "LSHADE": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.001095860818907,
+    "max_top": null,
+    "tangent": 6,
+    "min_margin": 6.711575022677607e-05
+   },
+   "PSO": {
+    "n": 120,
+    "feasible": 119,
+    "min_clear": 20.005160994082786,
+    "max_top": null,
+    "tangent": 0,
+    "min_margin": 0.0010807621665307465
+   },
+   "SPSO": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 19.999999999999506,
+    "max_top": null,
+    "tangent": 41,
+    "min_margin": 0.0
+   },
+   "WOA": {
+    "n": 120,
+    "feasible": 120,
+    "min_clear": 20.000874195985205,
+    "max_top": null,
+    "tangent": 37,
+    "min_margin": 1.3593023595603881e-08
    }
   }
  }

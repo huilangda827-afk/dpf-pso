@@ -191,19 +191,24 @@ def prose_journal(v, S):
     H = S.get("heldout_ablation")
     if H and "DPF-PSO_noPG" in H["methods"] and "DPF-PSO_noA" in H["methods"]:
         s1, s2 = B._sig(H, "DPF-PSO_noPG"), B._sig(H, "DPF-PSO_noA")
-        txt = (f"Two further components were tested on the held-out scenarios: without periodic global fusion "
-               f"(keeping the initial one), DPF-PSO's variant was {B.vs_variant(H, 'DPF-PSO_noPG')}, and with a "
-               f"fixed step size it was {B.vs_variant(H, 'DPF-PSO_noA')}")
-        if s1 == ("=", "=") and s2 == ("=", "="):
-            txt += (". Neither component contributes significantly, which agrees with the tuned configuration "
-                    "(Section 5.3) that dropped both; a simpler DPF-PSO with a single global fusion and a fixed "
-                    "step is therefore an adequate recommendation.")
-        elif "-" in s1 + s2:
-            txt += ("; removing a component helped in at least one case, so the default schedule is not the best "
-                    "choice for every $n$ (Table 3).")
-        else:
-            keep = [nm for s, nm in ((s1, "periodic global fusion"), (s2, "step adaptation")) if "+" in s]
-            txt += f"; {B.and_list(keep)} therefore contribute(s) significantly for at least one $n$."
+        txt = (f"Two further components were tested on the held-out scenarios: the variant without periodic "
+               f"global fusion (keeping the initial one) was {B.vs_variant(H, 'DPF-PSO_noPG')}, and the variant "
+               f"with a fixed step size was {B.vs_variant(H, 'DPF-PSO_noA')}.")
+
+        def verdict(s, name):
+            plus = [n for n, x in zip(NS, s) if x == "+"]
+            minus = [n for n, x in zip(NS, s) if x == "-"]
+            if plus and not minus:
+                return f"{name} contributes for $n={'$ and $n='.join(plus)}$"
+            if minus and not plus:
+                return (f"{name} can be dropped (the variant without it was slightly better for "
+                        f"$n={'$ and $n='.join(minus)}$)")
+            if not plus and not minus:
+                return f"{name} can be dropped"
+            return f"the effect of {name} depends on $n$"
+        txt += (" Hence " + verdict(s1, "periodic global fusion") + ", whereas " + verdict(s2, "the step-size adaptation")
+                + "; the tuned configuration of Section 5.3, which dropped both, was selected on the design "
+                  "scenarios and is not contradicted for $n=10$.")
         v["hab2_text"] = txt
         v["_hab2_sigs"] = (s1, s2)
     else:
@@ -261,22 +266,72 @@ def prose_journal(v, S):
             g = [Hv["tests"][f"{o}|{n}"]["gap_median"] for n in NS]
             s = [Hv["tests"][f"{o}|{n}"]["sig"] for n in NS]
             word = {"+": "better than", "=": "not significantly different from", "-": "worse than"}
-            parts.append(f"{T.lab(o)} on the spherical encoding was {word[s[0]]} its slot-encoded version for $n=10$ "
-                         f"(Δ̃ = {T.pct(g[0])}) and {word[s[1]]} it for $n=20$ (Δ̃ = {T.pct(g[1])})")
+            if s[0] == s[1]:
+                parts.append(f"{T.lab(o)} on the spherical encoding was {'significantly ' if s[0] != '=' else ''}"
+                             f"{word[s[0]]} its slot-encoded version for {'either' if s[0] == '=' else 'both'} $n$ "
+                             f"(Δ̃ = {T.pct(g[0])} and {T.pct(g[1])})")
+            else:
+                parts.append(f"{T.lab(o)} on the spherical encoding was {word[s[0]]} its slot-encoded version for $n=10$ "
+                             f"(Δ̃ = {T.pct(g[0])}) and {word[s[1]]} it for $n=20$ (Δ̃ = {T.pct(g[1])})")
         sph_others = [m for m in Hs["methods"] if m != REF]
-        txt = ("Encoding sensitivity (design log 18f). " + "; ".join(parts)
-               + ". Against DPF-PSO under the original model, DPF-PSO was "
+        names = B.and_list(T.lab(m.replace("-sph", "")) for m in sph_others)
+        txt = ("; ".join(parts) + ". Under the original model, DPF-PSO was "
                + B.join_clauses(B.compare_clauses(Hs, sph_others)) + ".")
+        orig_minus = [(m, n) for m in sph_others for n in NS if Hs["tests"][f"{m}|{n}"]["sig"] == "-"]
+        g_orig = [-Hs["tests"][f"{m}|{n}"]["gap_median"] for m, n in orig_minus]
+        imp = [Hvs[m]["tests"][f"{m.replace('-sph', '')}|{n}"]["gap_median"] for m in Hvs for n in NS]
+        v["sph_imp_lo"], v["sph_imp_hi"] = T.pct(min(imp), signed=False), T.pct(max(imp), signed=False)
+        band_minus = []
         if Hsb:
             sphb_others = [m for m in Hsb["methods"] if m != REF]
-            txt += (" Under the band model, DPF-PSO was " + B.join_clauses(B.compare_clauses(Hsb, sphb_others))
-                    + ", which is the pattern expected if the spherical encoding profits from leaving the band "
-                      "between merged waypoints.")
+            band_minus = [(m, n) for m in sphb_others for n in NS if Hsb["tests"][f"{m}|{n}"]["sig"] == "-"]
+            txt += " Under the band model, DPF-PSO was " + B.join_clauses(B.compare_clauses(Hsb, sphb_others)) + "."
             v["_sph_band_sigs"] = {m: B._sig(Hsb, m) for m in sphb_others}
-        v["sph_text"] = txt
         v["_sph_sigs"] = {m: B._sig(Hs, m) for m in sph_others}
+        v["_sph_orig_minus"], v["_sph_band_minus"] = orig_minus, band_minus
+        rem = B.and_list(f"{T.lab(m.replace('-sph', ''))} for $n={n}$" for m, n in band_minus)
+        rem_plain = B.and_list(f"{T.lab(m.replace('-sph', ''))} for {n} waypoints" for m, n in band_minus)
+        if len(orig_minus) == 2 * len(sph_others):
+            lo, hi = T.pct(min(g_orig), signed=False), T.pct(max(g_orig), signed=False)
+            v["sph_dpf_lo"], v["sph_dpf_hi"] = lo, hi
+            if not band_minus:
+                after = "an advantage that disappeared when the altitude band was enforced along the path"
+                after_short = "with the band enforced along the path, their advantage disappeared"
+            else:
+                after = (f"an advantage that largely disappeared when the altitude band was enforced along the path "
+                         f"and remained only for {rem_plain}")
+                after_short = f"with the band enforced along the path, their advantage remained only for {rem_plain}"
+            txt += (f" The slot encoding is therefore a handicap for these black-box methods: on the spherical "
+                    f"encoding, which can merge waypoints, they beat DPF-PSO under the published model, and "
+                    f"{after_short}. Most of the advantage of the spherical encoding thus comes from the same "
+                    f"waypoint-only band check as the advantage of tuned SPSO"
+                    + ("." if not band_minus else ", but not all of it: merging waypoints also helps within the band."))
+            v["abs_sph"] = (f"The encoding matters as much as the optimizer: on the spherical encoding of SPSO, {names} "
+                            f"were significantly better than DPF-PSO, whose median cost was {lo}–{hi} higher, {after}.")
+            v["hl_sph"] = (f"The waypoint encoding can decide the ranking: on SPSO's spherical encoding, {names} beat "
+                           f"DPF-PSO under the published cost model; {after_short}.")
+            v["contrib_sph"] = (f" On the spherical encoding of SPSO, which can merge waypoints, {names} beat DPF-PSO "
+                                f"under the published model; {after_short}, so the ranking depends on the encoding "
+                                f"as well as on how constraints are checked.")
+            v["disc_sph"] = (f"The comparison is also conditional on the encoding. The slot encoding that makes DPF "
+                             f"possible handicaps the black-box methods, which improved by {v['sph_imp_lo']}–"
+                             f"{v['sph_imp_hi']} on the spherical encoding and then beat DPF-PSO under the published "
+                             f"model; benchmarks should therefore cross optimizers with encodings instead of fixing "
+                             f"one encoding for all of them.")
+            v["conc_sph"] = (f"On the spherical encoding of SPSO, however, {names} outperformed DPF-PSO under the "
+                             f"published model; {after_short}.")
+        else:
+            v["abs_sph"] = (f"On the spherical encoding of SPSO, DPF-PSO was "
+                            + B.join_clauses(B.compare_clauses(Hs, sph_others)) + ".")
+            v["hl_sph"] = v["abs_sph"]
+            v["contrib_sph"] = " " + v["abs_sph"]
+            v["disc_sph"] = v["abs_sph"]
+            v["conc_sph"] = v["abs_sph"]
+        v["sph_text"] = txt
     else:
         v["sph_text"] = ""
+        for k in ("abs_sph", "hl_sph", "contrib_sph", "disc_sph", "conc_sph"):
+            v[k] = ""
     if "b4" in S and "_b4_bb_gaps" in v:
         g4, g1 = float(np.median(v["_b4_bb_gaps"])), float(np.median(v["_bb_gaps"]))
         v["b4_bb_gap_med"], v["main_bb_gap_med2"] = T.pct(g4, signed=False), T.pct(g1, signed=False)

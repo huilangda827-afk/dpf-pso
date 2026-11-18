@@ -64,7 +64,7 @@ def fe_table(fe):
 
 
 SAFETY_LABEL = {"main": "S1–S6", "heldout": "H01–H40", "public": "C1", "eqtime": "Equal CPU time",
-                "n30": "n = 30", "budget5": "5× budget", "b2": "b~2~ = 10",
+                "n30": "n = 30", "budget5": "5× budget", "b2": "b~2~ = 10", "b4": "b~4~ = 10",
                 "heldout_eqtime": "H01–H40, equal CPU time", "heldout_band": "H01–H40, band along segments",
                 "heldout2": "H41–H80", "heldout2_band": "H41–H80, band along segments",
                 "heldout_grid": "H01–H80, lattice DP"}
